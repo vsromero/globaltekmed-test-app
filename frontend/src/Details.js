@@ -7,7 +7,7 @@ function Details() {
   const [movie, setMovie] = useState([]);
 
   useEffect(() => {
-    axios.get('http://127.0.0.1:8000/'+movieHref)
+    axios.get('http://34.70.220.139:3000/'+movieHref)
         .then(response => {
           setMovie(response.data);
         })
