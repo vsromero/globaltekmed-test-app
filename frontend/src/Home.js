@@ -8,7 +8,7 @@ function Home() {
   const [page, setPage] = useState(1);
 
   useEffect(() => {
-    axios.get('http://127.0.0.1:8000/?page='+page)
+    axios.get('http://34.70.220.139:8000/?page='+page)
     .then(response => {
       setMovies(response.data);
     })
